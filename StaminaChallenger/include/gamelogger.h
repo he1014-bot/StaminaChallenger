@@ -1,0 +1,21 @@
+#ifndef GAMELOGGER_H
+#define GAMELOGGER_H
+
+#include <QObject>
+#include "character.h"
+
+/**
+ * @brief ???????
+ * ??Character????????????????
+ */
+class GameLogger : public QObject
+{
+    Q_OBJECT
+public:
+    explicit GameLogger(QObject *parent = nullptr);
+
+    // ????????(??????)
+    QString getCharacterDetails(const Character& character) const;
+};
+
+#endif // GAMELOGGER_H

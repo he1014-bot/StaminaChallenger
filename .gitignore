@@ -1,0 +1,27 @@
+# Build files
+*.o
+*.obj
+*.exe
+*.app
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile
+Makefile.*
+debug/
+release/
+
+# IDE files
+*.pro.user
+*.pro.user.*
+.vscode/
+.qt/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Qt Creator files
+*.autosave

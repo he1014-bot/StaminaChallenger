@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 主窗口UI定义文件 - Stamina Challenger游戏 -->
+<ui version="4.0">
+ <class>MainWindow</class>
+ <!-- 主窗口定义 -->
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stamina Challenger</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+   <!-- 游戏标题标签 -->
+   <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>Stamina Challenger</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+   <!-- 健康值进度条 -->
+   <widget class="QProgressBar" name="healthBar">
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+   <!-- 健康值文字标签 -->
+   <widget class="QLabel" name="healthLabel">
+      <property name="text">
+       <string>Health: 100</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+   <!-- 耐力值进度条 -->
+   <widget class="QProgressBar" name="staminaBar">
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+   <!-- 耐力值文字标签 -->
+   <widget class="QLabel" name="staminaLabel">
+      <property name="text">
+       <string>Stamina: 50</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+     <!-- 攻击按钮 -->
+     <widget class="QPushButton" name="attackBtn">
+        <property name="text">
+         <string>Attack</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+     <!-- 休息按钮 -->
+     <widget class="QPushButton" name="restBtn">
+        <property name="text">
+         <string>Rest</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+     <!-- 防御按钮 -->
+     <widget class="QPushButton" name="defendBtn">
+        <property name="text">
+         <string>Defend</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+   <!-- 游戏日志显示区域 -->
+   <widget class="QTextEdit" name="logTextEdit">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
